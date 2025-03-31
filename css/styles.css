@@ -153,6 +153,19 @@ header {
     font-size: 1.1rem;
 }
 
+.cta-btn {
+    background-color: var(--gold);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.cta-btn:hover {
+    background-color: var(--charcoal-gray);
+    color: var(--blush-pink);
+}
 .footer {
     background-color: var(--charcoal-gray);
     color: var(--soft-white);
