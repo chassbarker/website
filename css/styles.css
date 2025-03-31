@@ -114,6 +114,7 @@ header {
     padding: 60px 20px;
     background-color: var(--soft-white);
     text-align: center;
+    ;
 }
 
 .about-section h2 {
@@ -127,6 +128,7 @@ header {
     max-width: 700px;
     margin: 0 auto 20px;
     font-size: 1.1rem;
+    font-weight: bold;
     color: var(--charcoal-gray);
 }
 
