@@ -134,7 +134,7 @@ header {
 .cta-section {
     background-color: var(--muted-green);
     /* Apply the background color */
-    height: 300px;
+    height: 400px;
     /* Adjust the height as needed */
     display: flex;
     /* Optional: Center content */
