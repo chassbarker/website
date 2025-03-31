@@ -150,7 +150,7 @@ header {
 .footer {
     background-color: var(--charcoal-gray);
     color: var(--soft-white);
-    text-align: center;
+    text-align: center-stretch;
     padding: 20px;
     font-size: 0.9rem;
     line-height: 1.6;
