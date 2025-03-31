@@ -129,7 +129,9 @@ header {
     font-size: 1.1rem;
     font-weight: bold;
     color: var(--charcoal-gray);
-}.cta-section {
+}
+
+.cta-section {
     height: 800px;
     background-color: var(--muted-green);
     color: var(--soft-white);
