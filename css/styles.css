@@ -170,7 +170,7 @@ header {
 .footer {
     background-color: var(--charcoal-gray);
     color: var(--soft-white);
-    text-align: justify;
+    text-align: row;
     padding: 20px;
     font-size: 0.9rem;
     font-weight: bold;
