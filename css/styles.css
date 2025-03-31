@@ -76,14 +76,19 @@ header {
 
 .hero-text-overlay {
     position: absolute;
-    bottom: 20px;
+    bottom: 40px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: hsla(0, 0%, 0%, 0.5);
-    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Slightly darker for readability */
+    padding: 30px 20px;
     border-radius: 10px;
     color: white;
     max-width: 90%;
+    width: 800px;
+    text-align: center;
+    font-size: 1.25rem;
+    line-height: 1.6;
 }
 
 .btn {
