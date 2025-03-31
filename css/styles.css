@@ -132,16 +132,15 @@ header {
 }
 
 .cta-section {
+    height: 800px;
     background-color: var(--muted-green);
-    /* Apply the background color */
-    height: 1000px;
-    /* Adjust the height as needed */
+    color: var(--soft-white);
+    text-align: center;
     display: flex;
-    /* Optional: Center content */
-    align-items: center;
-    /* Optional: Center content vertically */
+    flex-direction: column;
     justify-content: center;
-    /* Optional: Center content horizontally */
+    align-items: center;
+    padding: 0 20px;
 }
 
 .cta-section h2 {
