@@ -4,7 +4,6 @@
     --soft-white: #FAFAFA;
     --muted-green: #A4B494;
     --charcoal-gray: #4A4A4A;
-}
 
 /* Reset + Base Styles */
 * {
@@ -170,6 +169,7 @@ header {
     color: var(--blush-pink);
 }
 
+/* Footer section styles: Provides a consistent footer layout with centered content and styling */
 .footer {
     background-color: var(--charcoal-gray);
     color: var(--soft-white);
@@ -186,9 +186,9 @@ header {
     color: var(--gold);
     text-decoration: none;
 }
-
 .footer a:hover {
-    color: var(--blush-pink);
+    color: #E5C07B; /* A lighter shade of gold */
+}
 }
 
 @media (max-width: 768px) {
