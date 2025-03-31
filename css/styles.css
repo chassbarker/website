@@ -152,9 +152,10 @@ header {
 .footer {
     background-color: var(--charcoal-gray);
     color: var(--soft-white);
-    text-align: center-stretch;
+    text-align: justify;
     padding: 20px;
     font-size: 0.9rem;
+    font-weight:bold;
     line-height: 1.6;
 }
 
