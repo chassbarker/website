@@ -132,7 +132,7 @@ header {
 }
 
 .cta-section {
-    min-height: 100px;
+    min-height: 50px;
     background-color: var(--muted-green);
     color: var(--soft-white);
     text-align: center;
