@@ -7,7 +7,6 @@
     --header-padding-vertical: 20px;
     --header-padding-horizontal: 40px;
     --hero-image-url: url('/absolute/path/to/images/comprose.jpg');
-}
 
 /* Base Styles */
 body {
@@ -78,7 +77,7 @@ header {
 .hero-btn:hover {
     background-color: var(--charcoal-gray);
     color: var(--blush-pink);
-}    gap: 20px;
+}
 }
 
 .nav-links a {
