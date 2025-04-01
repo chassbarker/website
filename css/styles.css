@@ -46,12 +46,14 @@ header {
 .nav-links {
     display: flex;
     list-style: none;
-    align-items: flex-end;
-    /* Moves content to bottom */
     justify-content: space-between;
+    /* Ensures equal spacing between links */
+    gap: 20px;
+    /* Adds consistent spacing between items */
+    align-items: center;
     text-align: center;
-    padding-bottom: 40px;
-    opacity: 0.6;
+    padding: 0;
+    margin: 0;
 }
 
 .hero-text-overlay {
