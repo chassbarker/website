@@ -98,7 +98,7 @@ header {
 
 /* CTA Section */
 .cta-section {
-    height: 800px;
+    height: 500px;
     background-color: var(--muted-green);
     color: var(--soft-white);
     display: flex;
