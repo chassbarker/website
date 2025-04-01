@@ -142,7 +142,7 @@ header {
 
 .cta-content {
     background-color: var(--muted-green);
-    max-width: 800px;
+    max-width: 100%;
     font-size: 1rem;
     text-align: center;
     margin-bottom: 20px;
