@@ -59,13 +59,13 @@ header {
 
 /* Hero Section */
 .hero {
-    margin-top: 80px;
+    position: relative;
     height: 60vh;
     background: url('../images/comprose.jpg') center/cover no-repeat;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+    /* Moves content to bottom */
     justify-content: center;
-    position: relative;
     text-align: center;
     padding-bottom: 40px;
 }
@@ -73,10 +73,10 @@ header {
 .hero-text-overlay {
     background-color: rgba(0, 0, 0, 0.6);
     padding: 20px;
-    border-radius: 40px;
+    border-radius: 10px;
     color: white;
-    max-width: 90%;
-    width: 700px;
+    width: 90%;
+    max-width: 700px;
 }
 .hero-btn {
     background-color: var(--gold);
