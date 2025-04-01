@@ -167,7 +167,7 @@ body.contact-page {
     color: var(--charcoal-gray);
 }
 
-/* Footer */
+/* Footer: This section provides a consistent footer area for the website, including links and copyright information. */
 .footer {
     background-color: var(--charcoal-gray);
     color: var(--soft-white);
