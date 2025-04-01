@@ -1,4 +1,4 @@
-:root {
+root {
     --blush-pink: #F4C2C2;
     --gold: #D4AF37;
     --soft-white: #FAFAFA;
@@ -7,6 +7,7 @@
     --header-padding-vertical: 20px;
     --header-padding-horizontal: 40px;
     --hero-image-url: url('/absolute/path/to/images/comprose.jpg');
+}
 
 /* Base Styles */
 body {
@@ -22,8 +23,8 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: var(--charcoal-gray);
-    /* Padding ensures spacing around header content */
     padding: var(--header-padding-vertical) var(--header-padding-horizontal);
+    flex-wrap: wrap;
 }
 
 .logo {
@@ -46,38 +47,10 @@ header {
 .nav-links {
     display: flex;
     list-style: none;
-    justify-content: space-between;
-    /* Ensures equal spacing between links */
     gap: 20px;
-    /* Adds consistent spacing between items */
     align-items: center;
-    text-align: center;
     padding: 0;
     margin: 0;
-}
-
-.hero-text-overlay {
-    background-color: rgba(0, 0, 0, 0.6);
-    color: var(--soft-white);
-    border-radius: 10px;
-    color: white;
-    width: 90%;
-    max-width: 700px;
-}
-.hero-btn {
-    background-color: var(--gold);
-    color: white;
-    padding: 10px 20px;
-    margin-top: 10px;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-}
-
-.hero-btn:hover {
-    background-color: var(--charcoal-gray);
-    color: var(--blush-pink);
-}
 }
 
 .nav-links a {
@@ -91,7 +64,6 @@ header {
 }
 
 /* Hero Section */
-/* Hero Section */
 .hero {
     position: relative;
     height: 60vh;
@@ -103,10 +75,8 @@ header {
     padding-bottom: 40px;
 }
 
-/* Hero Text Overlay */
 .hero-text-overlay {
     background-color: rgba(0, 0, 0, 0.75);
-    /* Darker for better readability */
     padding: 20px;
     border-radius: 10px;
     color: #fff;
@@ -114,17 +84,14 @@ header {
     max-width: 700px;
 }
 
-/* Hero Heading */
 .hero-text-overlay h1 {
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 15px;
     color: #ffffff;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
-    /* Optional: makes text pop */
 }
 
-/* Hero Button */
 .hero-btn {
     background-color: var(--gold);
     color: #fff;
@@ -142,6 +109,7 @@ header {
     color: var(--blush-pink);
 }
 
+/* CTA Section */
 .cta-content {
     background-color: var(--muted-green);
     max-width: 100%;
@@ -157,12 +125,50 @@ header {
     text-decoration: none;
     border-radius: 5px;
     font-size: 1rem;
-    text-align: center; /* Center the button */
 }
 
 .cta-btn:hover {
     background-color: var(--charcoal-gray);
     color: var(--blush-pink);
+}
+
+/* Contact Page Parallax Background */
+.parallax-bg {
+    background-image: url('../images/contactpage.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+}
+
+.contact-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 10px;
+}
+
+.contact-info a {
+    color: var(--gold);
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+    color: var(--charcoal-gray);
 }
 
 /* Footer */
@@ -186,10 +192,6 @@ header {
 @media (max-width: 768px) {
     .menu-icon {
         display: block;
-    }
-
-    header {
-        flex-wrap: wrap;
     }
 
     .nav-links {

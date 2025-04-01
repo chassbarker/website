@@ -3,13 +3,58 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact | Chassidy Barker's Portfolio</title>
     <link rel="stylesheet" href="css/styles.css" />
- 
+    <style>
+        /* Parallax Background Container */
+        .parallax-bg {
+            background-image: url('images/contactpage.svg');
+            /* Update path as needed */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            position: fixed;
+            width: 100%;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            opacity: 0.9;
+        }
+
+        /* Overlay style for content */
+        .contact-section {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.85);
+            /* Keeps text readable */
+            border-radius: 10px;
+        }
+
+        .contact-info a {
+            color: var(--gold);
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+            color: var(--charcoal-gray);
+        }
+    </style>
 </head>
 
 <body>
+
+    <!-- Parallax Background -->
+    <div class="parallax-bg"></div>
 
     <!-- Header -->
     <header>
@@ -23,8 +68,7 @@
         </nav>
     </header>
 
-
-    <!-- Contact Info Section -->
+    <!-- Contact Section -->
     <section class="contact-section">
         <h2>Contact Me</h2>
         <p>Let’s bring your vision to life. Reach out whenever you’re ready to get started!</p>
@@ -32,14 +76,10 @@
         <div class="contact-info">
             <p><strong>Name:</strong> Chassidy Barker</p>
             <p><strong>Phone:</strong>
-                <a href="tel:2109476417" class="contact-link">
-                    (210)&nbsp;947&#8209;6417
-                </a>
+                <a href="tel:2109476417">(210)&nbsp;947&#8209;6417</a>
             </p>
             <p><strong>Email:</strong>
-                <a href="mailto:chassbarker&#64;icloud&#46;com" class="email-link">
-                    chassbarker&#64;icloud&#46;com
-                </a>
+                <a href="mailto:chassbarker&#64;icloud&#46;com">chassbarker&#64;icloud&#46;com</a>
             </p>
         </div>
     </section>
@@ -48,9 +88,9 @@
     <footer class="footer">
         <p>&copy; 2025 ChassTastic Digital Code Studio. All Rights Reserved.</p>
         <p>
-            <p><strong>Contact:</strong>
+            <strong>Contact:</strong>
             <a href="mailto:chassbarker&#64;icloud&#46;com">chassbarker&#64;icloud&#46;com</a> |
-            <a href="tel:2109476417">(210)&nbsp;947&#8209;6417</a></p>
+            <a href="tel:2109476417">(210)&nbsp;947&#8209;6417</a>
         </p>
         <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
     </footer>
