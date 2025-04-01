@@ -48,7 +48,7 @@ header {
     list-style: none;
     align-items: flex-end;
     /* Moves content to bottom */
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
     padding-bottom: 40px;
     opacity: 0.6;
