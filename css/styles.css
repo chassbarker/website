@@ -133,8 +133,11 @@ header {
 }
 
 body.contact-page {
-    background-image: url('../images/contactpage.svg');
-    /* Adjust path if needed */
+    /* Remove the background image */
+    background-color: var(--soft-white);
+    /* Optional: Set a plain background color */
+    /* background-image: none; */
+    /* Alternatively, you can explicitly set it to none */
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
