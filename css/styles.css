@@ -79,7 +79,7 @@ header {
 .hero {
     position: relative;
     height: 60vh;
-    background: url('../images/comprose.jpg') center/cover no-repeat;
+    background: var(--hero-image-url) center/cover no-repeat;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -115,7 +115,6 @@ header {
     display: inline-block;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
-
 .hero-btn:hover {
     background-color: var(--hero-btn-hover-bg);
     color: var(--blush-pink);
