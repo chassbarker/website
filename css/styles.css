@@ -132,21 +132,14 @@ header {
     color: var(--blush-pink);
 }
 
-/* Contact Page Parallax Background */
-.parallax-bg {
+body.contact-page {
     background-image: url('../images/contactpage.svg');
+    /* Adjust path if needed */
     background-size: cover;
     background-position: center;
+    background-attachment: scroll;
     background-repeat: no-repeat;
-    height: 100vh;
-    position: fixed;
-    width: 100%;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    opacity: 0.9;
 }
-
 .contact-section {
     min-height: 100vh;
     display: flex;
