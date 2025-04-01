@@ -46,8 +46,6 @@ header {
 .nav-links {
     display: flex;
     list-style: none;
-   background: url('../images/comprose.jpg') center/cover no-repeat;
-    display: flex;
     align-items: flex-end;
     /* Moves content to bottom */
     justify-content: center;
@@ -143,11 +141,11 @@ header {
 }
 
 .cta-content {
-    background-color: #A4B494;
+    background-color: var(--muted-green);
     max-width: 800px;
-    font-size: 1rem; /* Increased font size */
-    text-align: center; /* Centered text */
-    margin-bottom: 20px; /* Added spacing below the text */
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .cta-btn {
