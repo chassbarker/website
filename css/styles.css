@@ -7,7 +7,6 @@
     --header-padding-vertical: 20px;
     --header-padding-horizontal: 40px;
     --hero-image-url: url('/absolute/path/to/images/comprose.jpg');
-}
 
 /* Base Styles */
 body {
@@ -79,6 +78,7 @@ header {
     background-color: var(--charcoal-gray);
     color: var(--blush-pink);
 }
+}
 
 .nav-links a {
     color: var(--soft-white);
@@ -90,6 +90,7 @@ header {
     color: var(--blush-pink);
 }
 
+/* Hero Section */
 /* Hero Section */
 .hero {
     position: relative;
@@ -211,53 +212,5 @@ header {
     .nav-links a {
         display: block;
         padding: 10px;
-    }
-}
-
-.contact-section {
-    flex-grow: 1; /* Ensure the section fills the available space */
-    min-height: 100vh; /* Make the section span the full viewport height */
-    padding: 20px; /* Add padding for spacing */
-    background-image: url('../images/contact-bg.jpg'); /* Replace with the path to your image */
-    background-size: cover; /* Ensure the image covers the entire section */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
-    display: flex; /* Use flexbox for layout */
-    flex-direction: column; /* Arrange content vertically */
-    justify-content: center; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
-    text-align: center; /* Center text */
-    color: white; /* Ensure text is readable on the background */
-}
-
-.contact-section h2 {
-    font-size: 2rem; /* Adjust heading size for readability */
-    margin-bottom: 1rem;
-}
-
-.contact-section p {
-    font-size: 1rem; /* Adjust paragraph size for readability */
-    margin-bottom: 1rem;
-    line-height: 1.5; /* Improve text spacing */
-}
-
-.contact-section a {
-    color: #ffd700; /* Add a contrasting color for links */
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.contact-section a:hover {
-    text-decoration: underline; /* Add hover effect for links */
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .contact-section h2 {
-        font-size: 1.5rem; /* Adjust heading size for smaller screens */
-    }
-
-    .contact-section p {
-        font-size: 0.9rem; /* Adjust paragraph size for smaller screens */
     }
 }
