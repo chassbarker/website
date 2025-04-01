@@ -4,6 +4,9 @@
     --soft-white: #FAFAFA;
     --muted-green: #A4B494;
     --charcoal-gray: #4A4A4A;
+    --header-padding-vertical: 20px;
+    --header-padding-horizontal: 40px;
+    --hero-image-url: url('/absolute/path/to/images/comprose.jpg');
 }
 
 /* Base Styles */
@@ -20,8 +23,8 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: var(--charcoal-gray);
-    padding: 20px 40px;
-    flex-wrap: wrap;
+    /* Padding ensures spacing around header content */
+    padding: var(--header-padding-vertical) var(--header-padding-horizontal);
 }
 
 .logo {
@@ -59,7 +62,6 @@ header {
 
 /* Hero Section */
 .hero {
-    background: var(--soft-white) url('../images/comprose.jpg') center/cover no-repeat;
     height: 60vh;
     background: url('../images/comprose.jpg') center/cover no-repeat;
     display: flex;
@@ -145,6 +147,10 @@ header {
 @media (max-width: 768px) {
     .menu-icon {
         display: block;
+    }
+
+    header {
+        flex-wrap: wrap;
     }
 
     .nav-links {
