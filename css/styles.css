@@ -6,7 +6,7 @@
     --charcoal-gray: #4A4A4A;
     --header-padding-vertical: 20px;
     --header-padding-horizontal: 40px;
-    --hero-image-url: url('/absolute/path/to/images/comprose.jpg');
+    --hero-image-url: url('styles.css/images/comprose.jpg');
     --hero-btn-hover-bg: #333333; /* Define a specific hover background color */
     --overlay-bg: rgba(0, 0, 0, 0.75);
 /* Removed the extra closing curly brace */
@@ -79,7 +79,10 @@ header {
 .hero {
     position: relative;
     height: 60vh;
-    background: var(--hero-image-url) center/cover no-repeat;
+    background-image: url('styles.css/images/comprose.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -166,7 +169,7 @@ body.contact-page {
     padding: 40px 20px;
     max-width: 600px;
     margin: 0 auto;
-    background-color: var(--muted-green);
+    background-color: var(--blush-pink);
     border-radius: 10px;
 }
 
