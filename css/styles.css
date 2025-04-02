@@ -235,6 +235,7 @@ body.contact-page {
 
 .footer p {
     margin: 0;
+    max-height: fit-content;
 }
 
 .footer a {
