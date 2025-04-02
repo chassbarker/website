@@ -9,7 +9,9 @@
     --hero-image-url: url('../images/comprose.jpg');
     --hero-btn-hover-bg: #333333; /* Define a specific hover background color */
     --overlay-bg: rgba(0, 0, 0, 0.75);
-/* Removed the extra closing curly brace */
+    --breakpoint-mobile: 768px; /* Define a reusable breakpoint variable */
+    --spacing-medium: 20px; /* Added variable for consistent spacing */
+}
 
 /* Base Styles */
 body {
@@ -17,10 +19,7 @@ body {
     font-family: 'Segoe UI', sans-serif;
     background-color: var(--soft-white);
     color: var(--charcoal-gray);
-/* Removed the extra closing curly brace */
-
-/* Header */
-header {
+}
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,6 +27,7 @@ header {
     padding: var(--header-padding-vertical) var(--header-padding-horizontal);
     flex-wrap: wrap;
 }
+
 
 .logo {
     color: var(--gold);
@@ -187,7 +187,7 @@ body.contact-page {
 
 .about-section {
     min-height: calc(100vh - 140px);
-    /* Full screen minus header + footer */
+    /* Full screen minus header (80px) + footer (60px) */
     max-width: 900px;
     margin: 0 auto;
     padding: 60px 20px;
@@ -210,23 +210,27 @@ body.contact-page {
     margin-bottom: 20px;
 }
 
-@media (max-width: 768px) {
-    .about-section {
-        padding: 40px 20px;
-        font-size: 1rem;
-    }
-
+@media (max-width: var(--breakpoint-mobile)) {
     .about-heading {
         font-size: 1.5rem;
     }
 }
 
-/* Footer Styles */
+@media (max-width: var(--breakpoint-mobile)) {
+    .about-section {
+        /* Reduced padding for smaller screens to ensure better content fit and avoid excessive whitespace */
+        padding: 40px 20px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: var(--breakpoint-mobile)) {
+    .about-heading {
+        font-size: 1.5rem;
+    }
 .footer {
-    background-color: var(--charcoal-gray);
     color: var(--soft-white);
     text-align: center;
-    padding: 20px;
 }
 
 .footer a {
@@ -234,45 +238,10 @@ body.contact-page {
     text-decoration: none;
 }
 
-.footer a:hover {
-    color: var(--blush-pink);
-}
-
-/* Responsive Navigation */
-@media (max-width: 768px) {
-    .menu-icon {
-        display: block;
-    }
-
-    .nav-links {
-            display: none;
-            flex-direction: column;
-            width: 100%;
-            background-color: var(--charcoal-gray);
-            padding: 20px 0;
-            transition: opacity 0.3s ease, visibility 0.3s ease;
-            opacity: 0;
-            visibility: hidden;
-        }
-    
-        .menu-toggle:checked+.menu-icon+nav .nav-links {
-            display: flex;
-            opacity: 1;
-            visibility: visible;
-        }
-
-    /* When the menu toggle checkbox is checked, this selector ensures the navigation links are displayed in a flex layout. */
-    .menu-toggle:checked+.menu-icon+nav .nav-links {
-        display: flex;
-    }
-
-    .nav-links li {
-        width: 100%;
-        text-align: center;
-    }
-
-    .nav-links a {
-        display: block;
-        padding: 10px;
-    }
+.footer {
+    color: var(--soft-white);
+    text-align: center;
+.footer a {
+    color: var(--gold);
+    text-decoration: none;
 }
