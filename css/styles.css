@@ -95,7 +95,7 @@ header {
 
 .hero-text-overlay {
     background-color: var(--overlay-bg);
-    padding: 10px;
+    padding: 5px 10px; /* Reduced padding to make it smaller in height */
     border-radius: 5px;
     color: #fff;
     width: 90%;
