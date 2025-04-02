@@ -11,7 +11,8 @@
     --overlay-bg: rgba(0, 0, 0, 0.75);
     --breakpoint-mobile: 768px;
     --spacing-medium: 20px;
-    --button-max-width: 300px; /* Consistent button max-width */
+    --button-max-width: 300px;
+    /* Consistent button max-width */
 }
 
 body {
