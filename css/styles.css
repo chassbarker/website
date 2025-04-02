@@ -197,6 +197,16 @@ body.contact-page {
     border-radius: 10px;
 }
 
+.hero-btn,
+.cta-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    max-width: 300px;
+    min-width: 44px;
+    text-align: center;
+}
+
 .contact-info a {
     color: var(--soft-white);
     text-decoration: none;
