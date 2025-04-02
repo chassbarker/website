@@ -185,7 +185,7 @@
     }
 
     .contact-info a:hover {
-        text-decoration: underline;
+        text-decoration: none;
         color: var(--charcoal-gray);
     }
 
