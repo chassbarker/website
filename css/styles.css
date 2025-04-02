@@ -138,6 +138,10 @@ header {
     margin: 0;
     /* Remove bottom margin */
     padding: 60px 20px;
+    flex-grow: 1; /* Allow the section to grow and fill available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
 }
 
 .cta-btn {
