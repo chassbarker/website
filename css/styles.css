@@ -20,6 +20,8 @@ body {
     background-color: var(--soft-white);
     color: var(--charcoal-gray);
 }
+
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -122,7 +124,6 @@ body {
     background-color: var(--hero-btn-hover-bg);
     color: var(--blush-pink);
 }
-}
 
 .cta-section {
     background-color: var(--muted-green);
@@ -130,7 +131,6 @@ body {
     font-size: 1rem;
     text-align: center;
     margin-bottom: 20px;
-}
 }
 
 .cta-btn {
@@ -228,6 +228,8 @@ body.contact-page {
     .about-heading {
         font-size: 1.5rem;
     }
+}
+
 .footer {
     color: var(--soft-white);
     text-align: center;
@@ -238,11 +240,3 @@ body.contact-page {
     text-decoration: none;
 }
 
-.footer {
-    color: var(--soft-white);
-    text-align: center;
-.footer a {
-    color: var(--gold);
-    text-decoration: none;
-}
-}
