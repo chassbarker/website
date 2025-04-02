@@ -100,6 +100,7 @@ header {
     color: #fff;
     width: 90%;
     max-width: 700px;
+    max-height: 150px;
 }
 
 .hero-text-overlay h1 {
