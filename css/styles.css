@@ -147,6 +147,8 @@ background-color: var(--gold);
     text-decoration: none;
     border-radius: 5px;
     font-size: 1rem;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .cta-btn:hover {
