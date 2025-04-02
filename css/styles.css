@@ -139,6 +139,7 @@
     .cta-btn {
         background-color: var(--gold);
         color: white;
+        font-weight: bold;
         padding: 10px 20px;
         text-decoration: none;
         border-radius: 5px;
