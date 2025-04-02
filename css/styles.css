@@ -193,6 +193,7 @@ body.contact-page {
     margin: 0 auto;
     background-color: var(--muted-green);
     border-radius: 10px;
+    flex-wrap: wrap; /* Added flex-wrap for text */
 }
 
 
