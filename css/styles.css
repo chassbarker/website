@@ -14,7 +14,6 @@
     /* Define a reusable breakpoint variable */
     --spacing-medium: 20px;
     /* Added variable for consistent spacing */
-}
 
 /* Base Styles */
 body {
@@ -243,18 +242,20 @@ body.contact-page {
     align-items: center;
     text-align: center;
     font-size: 0.95rem;
-    flex-wrap: wrap;
     /* allows wrapping on smaller screens */
+    flex-wrap: wrap;
 }
 
 .footer p {
     margin: 0;
-}
 
+}
+/* Footer links styling: ensures links are visually distinct and maintain consistent spacing */
 .footer a {
     color: var(--gold);
     text-decoration: none;
     margin: 0 5px;
+}
 }
 
 .footer a:hover {
