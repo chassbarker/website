@@ -234,6 +234,8 @@ body.contact-page {
 }
 
 .about-section p {
+    font-weight: bold;
+    text-align: center;
     margin-bottom: 20px;
 }
 
