@@ -120,19 +120,16 @@ header {
     text-decoration: none;
     border-radius: 5px;
     font-size: 1rem;
-    display: inline-block;
+    transition: transform 0.3s ease;
     transition: background-color 0.3s ease;
-    max-width: 300px;
-    /* Set a reasonable max width for buttons */
+    max-width: var(--button-max-width);
     min-width: 44px;
-    /* Minimum width for touch targets on iPhone 15 */
     text-align: center;
-    /* Ensure text is centered within the button */
 }
-
 .hero-btn:hover {
     background-color: var(--hero-btn-hover-bg);
     color: var(--blush-pink);
+}
 }
 
 /* CTA Section */
