@@ -127,6 +127,7 @@ header {
     min-width: 44px;
     text-align: center;
 }
+
 .hero-btn:hover {
     transform: scale(1.05);
     color: var(--blush-pink);
