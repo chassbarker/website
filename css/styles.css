@@ -235,11 +235,29 @@ body.contact-page {
 }
 
 .footer {
+    background-color: var(--charcoal-gray);
     color: var(--soft-white);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    font-size: 0.95rem;
+    flex-wrap: wrap;
+    /* allows wrapping on smaller screens */
+}
+
+.footer p {
+    margin: 0;
 }
 
 .footer a {
     color: var(--gold);
     text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer a:hover {
+    color: var(--blush-pink);
+    text-decoration: underline;
 }
