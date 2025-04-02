@@ -185,6 +185,42 @@ body.contact-page {
     color: var(--charcoal-gray);
 }
 
+.about-section {
+    min-height: calc(100vh - 140px);
+    /* Full screen minus header + footer */
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--charcoal-gray);
+}
+
+.about-heading {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--muted-green);
+    text-align: center;
+}
+
+.about-section p {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        padding: 40px 20px;
+        font-size: 1rem;
+    }
+
+    .about-heading {
+        font-size: 1.5rem;
+    }
+}
+
 /* Footer Styles */
 .footer {
     background-color: var(--charcoal-gray);
