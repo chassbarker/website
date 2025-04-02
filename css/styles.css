@@ -7,10 +7,13 @@
     --header-padding-vertical: 20px;
     --header-padding-horizontal: 40px;
     --hero-image-url: url('../images/comprose.jpg');
-    --hero-btn-hover-bg: #333333; /* Define a specific hover background color */
+    --hero-btn-hover-bg: #333333;
+    /* Define a specific hover background color */
     --overlay-bg: rgba(0, 0, 0, 0.75);
-    --breakpoint-mobile: 768px; /* Define a reusable breakpoint variable */
-    --spacing-medium: 20px; /* Added variable for consistent spacing */
+    --breakpoint-mobile: 768px;
+    /* Define a reusable breakpoint variable */
+    --spacing-medium: 20px;
+    /* Added variable for consistent spacing */
 }
 
 /* Base Styles */
@@ -120,6 +123,7 @@ header {
     display: inline-block;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 .hero-btn:hover {
     background-color: var(--hero-btn-hover-bg);
     color: var(--blush-pink);
@@ -239,4 +243,3 @@ body.contact-page {
     color: var(--gold);
     text-decoration: none;
 }
-
