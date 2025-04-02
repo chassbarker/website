@@ -153,21 +153,21 @@ header {
 
 .cta-btn {
     background-color: var(--gold);
-        color: #fff;
-        font-weight: bold;
-        padding: 10px 20px;
-        text-decoration: none;
-        border-radius: 5px;
-        font-size: 1rem;
-        transition: transform 0.3s ease;
-        transition: background-color 0.3s ease;
-        max-width: var(--button-max-width);
-        min-width: 44px;
-        text-align: center;
-    }
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+    transition: background-color 0.3s ease;
+    max-width: var(--button-max-width);
+    min-width: 44px;
+    text-align: center;
+}
 
 .cta-btn:hover {
-transform: scale(1.05);
+    transform: scale(1.05);
     color: var(--blush-pink);
 }
 
