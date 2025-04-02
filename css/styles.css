@@ -136,7 +136,6 @@ header {
     font-size: 1rem;
     text-align: center;
     margin: 0;
-    /* Remove bottom margin */
     padding: 60px 20px;
     flex-grow: 1; /* Allow the section to grow and fill available space */
     display: flex;
