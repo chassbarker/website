@@ -6,7 +6,7 @@
     --charcoal-gray: #4A4A4A;
     --header-padding-vertical: 20px;
     --header-padding-horizontal: 40px;
-    --hero-image-url: url('styles.css/images/comprose.jpg');
+    --hero-image-url: url('../images/comprose.jpg');
     --hero-btn-hover-bg: #333333; /* Define a specific hover background color */
     --overlay-bg: rgba(0, 0, 0, 0.75);
 /* Removed the extra closing curly brace */
@@ -79,7 +79,7 @@ header {
 .hero {
     position: relative;
     height: 60vh;
-    background-image: url('styles.css/images/comprose.jpg');
+    background-image: url('../images/comprose.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
