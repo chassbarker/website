@@ -11,6 +11,7 @@
     --overlay-bg: rgba(0, 0, 0, 0.75);
     --breakpoint-mobile: 768px;
     --spacing-medium: 20px;
+    --button-max-width: 300px; /* Consistent button max-width */
 }
 
 body {
@@ -127,10 +128,10 @@ header {
     text-align: center;
 }
 .hero-btn:hover {
-    background-color: var(--hero-btn-hover-bg);
+    transform: scale(1.05);
     color: var(--blush-pink);
 }
-}
+
 
 /* CTA Section */
 .cta-section {
