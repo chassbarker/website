@@ -140,6 +140,7 @@ header {
     background-color: var(--muted-green);
     max-width: 100%;
     font-size: 1rem;
+    font-weight: bold;
     text-align: center;
     margin: 0;
     padding: 60px 20px;
