@@ -237,6 +237,7 @@ body.contact-page {
     font-weight: bold;
     text-align: center;
     margin-bottom: 20px;
+    flex-wrap: wrap;
 }
 
 /* Footer */
