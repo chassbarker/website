@@ -188,6 +188,7 @@ body.contact-page {
     justify-content: flex-start;
     align-items: center;
     text-align: center;
+    padding-top: 20px;
     padding: 40px 20px;
     max-width: 600px;
     margin: 0 auto;
