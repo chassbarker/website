@@ -233,7 +233,7 @@ header {
     /* Removed text-shadow for better performance on low-end devices */
 }
 
-@keyframes fadeSlideUp {
+@keyframes fadein {
     to {
         opacity: 1;
         transform: translateY(0);
