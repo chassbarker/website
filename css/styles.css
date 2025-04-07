@@ -148,7 +148,7 @@ header {
 /* Adds a little space between the text and the button */
 .hero-btn:hover {
     will-change: transform;
-    transform: scale(1.25);
+    transform: scale(1.10);
     color: var(--charcoal-gray);
     background-color: var(--blush-pink);
 }
