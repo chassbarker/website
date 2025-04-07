@@ -158,9 +158,10 @@ header {
     padding: 60px 20px;
     text-align: center;
     color: var(--soft-white);
-    display: block;
+    display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 /* About Section */
