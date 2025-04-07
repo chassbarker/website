@@ -110,19 +110,19 @@ header {
 }
 
 /* Button Styles */
-.hero-btn,
- background-color: var(--gold);
- color: hwb(0 100% 0%);
- font-weight: bold;
- padding: 10px 20px;
- text-decoration: none;
- border-radius: 5px;
- font-size: 1rem;
- max-width: var(--button-max-width);
- transition: transform 0.3s ease,
- background-color 0.3s ease;
- display: inline-block;
- text-align: center;
+.hero-btn {
+    background-color: var(--gold);
+    color: hwb(0 100% 0%);
+    font-weight: bold;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    max-width: var(--button-max-width);
+    transition: transform 0.3s ease,
+        background-color 0.3s ease;
+    display: inline-block;
+    text-align: center;
 }
 
 .cta-btn {
