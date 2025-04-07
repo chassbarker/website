@@ -158,7 +158,8 @@ header {
     transition: transform 0.3s ease, background-color 0.3s ease;
     display: inline-block;
     text-align: center;
-    margin-top: 20px; /* Adds a little space between the text and the button */
+    margin-top: 20px;
+    /* Adds a little space between the text and the button */
 }
 
 .cta-btn:hover {
