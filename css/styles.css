@@ -100,10 +100,11 @@ header {
     margin-bottom: 15px;
     opacity: 0;
     transform: translateY(30px);
-    animation: fadeSlideUp 1.8s ease-out forwards;
+    animation: hero-fadeSlideUp 1.8s ease-out forwards;
 }
 
-@keyframes fadeSlideUp {
+@keyframes hero-fadeSlideUp {
+    /* Fade in and slide up effect for hero text */
     to {
         opacity: 1;
         transform: translateY(0);
