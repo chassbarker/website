@@ -24,19 +24,11 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <script>
-            // Highlight the active link based on the current URL
-            const currentPage = window.location.pathname.split("/").pop();
-            const navLinks = document.querySelectorAll(".nav-links a");
-
-            navLinks.forEach(link => {
-                if (link.getAttribute("href") === currentPage) {
-                    link.classList.add("active");
-                }
-            });
-        </script>
     </header>
-
+    <script>
+        const currentPage = window.location.pathname.replace(/\/$/, "").split("/").pop();
+    </script>
+    <script src="./js/navigation.js"></script>
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-text-overlay">
@@ -67,6 +59,7 @@
         </p>
     </footer>
 
+    <script src="./js/navigation.js"></script>
 </body>
 
 </html>
