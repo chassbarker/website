@@ -173,6 +173,13 @@ header {
     flex-direction: column;
 }
 
+.cta-section p {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--soft-white);
+}
+
 /* About Section */
 .about-section {
     min-height: calc(100vh - 140px);
