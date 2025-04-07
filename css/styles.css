@@ -1,7 +1,8 @@
 :root {
     --blush-pink: #F4C2C2;
     --gold: #D4AF37;
-    --soft-white: #E0E0E0; /* Adjusted for better contrast */
+    --soft-white: #E0E0E0;
+    /* Adjusted for better contrast */
     --muted-green: #A4B494;
     --charcoal-gray: #4A4A4A;
     --overlay-bg: rgba(0, 0, 0, 0.75);
@@ -274,7 +275,7 @@ header {
     .about-heading {
         font-size: 1.5rem;
     }
-    
+
     .contact-section {
         padding: 40px 20px;
     }
