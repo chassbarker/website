@@ -103,38 +103,33 @@ header {
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 15px;
-    visibility: visible;
+    opacity: 0;
     transform: translateY(30px);
-    will-change: transform, opacity;
-    animation: fade-slide-up 1.8s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+    animation: fadeSlideUp 1.8s ease-out forwards;
 }
 
-/* This rule disables animations for users who prefer reduced motion */
-.disable-animation .hero-text-overlay h1 {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* Defines an animation to fade in and slide up elements for a smooth entrance effect */
-@keyframes fade-slide-up {
+@keyframes fadeSlideUp {
     to {
-        visibility: visible;
+        opacity: 1;
         transform: translateY(0);
     }
 }
 
 /* Black */
 .hero-btn {
-    font-weight: bold;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    max-width: var(--button-max-width);
-    transition: transform 0.3s ease,
-        background-color 0.3s ease;
-    display: inline-block;
-    text-align: center;
+    background-color: var(--gold);
+        color: #000000;
+        font-weight: bold;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        max-width: var(--button-max-width);
+        transition: transform 0.3s ease, background-color 0.3s ease;
+        display: inline-block;
+        margin-top: 20px;
+        text-align: center;
+        align-self: center;
 }
 
 .cta-btn {
