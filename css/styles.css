@@ -146,6 +146,21 @@ header {
     background-color: var(--blush-pink);
 }
 
+.cta-btn {
+    background-color: var(--gold);
+    color: hwb(0 100% 0%);
+    font-weight: bold;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    max-width: var(--button-max-width);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px; /* Adds a little space between the text and the button */
+}
+
 .cta-btn:hover {
     transform: scale(1.25);
     color: var(--charcoal-gray);
