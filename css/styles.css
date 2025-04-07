@@ -4,17 +4,12 @@
     --soft-white: #FAFAFA;
     --muted-green: #A4B494;
     --charcoal-gray: #4A4A4A;
-    --header-padding-vertical: 20px;
-    --header-padding-horizontal: 40px;
-    --hero-image-url: url('../images/comprose.jpg');
-    --hero-btn-hover-bg: #333333;
     --overlay-bg: rgba(0, 0, 0, 0.75);
-    --breakpoint-mobile: 768px;
-    --spacing-medium: 20px;
+    --hero-image-url: url('../images/comprose.jpg');
     --button-max-width: 300px;
-    /* Consistent button max-width */
 }
 
+/* Base Styles */
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
@@ -34,7 +29,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: var(--charcoal-gray);
-    padding: var(--header-padding-vertical) var(--header-padding-horizontal);
+    padding: 20px 40px;
     flex-wrap: wrap;
 }
 
@@ -55,17 +50,10 @@ header {
     display: none;
 }
 
-.menu-toggle:checked+.menu-icon+nav .nav-links {
-    display: flex;
-    opacity: 1;
-    visibility: visible;
-}
-
 .nav-links {
     display: flex;
     list-style: none;
     gap: 20px;
-    align-items: center;
     padding: 0;
     margin: 0;
 }
@@ -79,7 +67,6 @@ header {
 .nav-links a:hover {
     transform: scale(1.25);
     color: var(--blush-pink);
-    background-color: var(--charcoal-gray);
 }
 
 /* Hero Section */
@@ -99,62 +86,32 @@ header {
 
 .hero-text-overlay {
     background-color: var(--overlay-bg);
-    padding: 5px 5px;
-    /* Reduced padding to make it smaller in height */
+    padding: 20px;
     border-radius: 5px;
     color: #fff;
     width: 90%;
     max-width: 700px;
-    max-height: 100px;
 }
 
+/* Hero Text Animation */
 .hero-text-overlay h1 {
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 15px;
-    color: #ffffff;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeSlideUp 1.8s ease-out forwards;
 }
 
-.hero-btn {
-    background-color: var(--gold);
-    color: #fff;
-    font-weight: bold;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    transition: transform 0.3s ease;
-    transition: background-color 0.3s ease;
-    max-width: var(--button-max-width);
-    min-width: 44px;
-    text-align: center;
+@keyframes fadeSlideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-.hero-btn:hover {
-    transform: scale(1.25);
-    color: var(--blush-pink);
-    background-color: var(--charcoal-gray);
-}
-
-
-/* CTA Section */
-.cta-section {
-    background-color: var(--muted-green);
-    max-width: 100%;
-    font-size: 1rem;
-    font-weight: normal;
-    text-align: center;
-    margin: 0;
-    padding: 60px 20px;
-    flex-grow: 1;
-    /* Allow the section to grow and fill available space */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* Center content vertically */
-}
-
+/* Button */
+.hero-btn,
 .cta-btn {
     background-color: var(--gold);
     color: #fff;
@@ -163,85 +120,25 @@ header {
     text-decoration: none;
     border-radius: 5px;
     font-size: 1rem;
-    transition: transform 0.3s ease;
-    transition: background-color 0.3s ease;
     max-width: var(--button-max-width);
-    min-width: 44px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    display: inline-block;
     text-align: center;
 }
 
+.hero-btn:hover,
 .cta-btn:hover {
     transform: scale(1.25);
+    background-color: var(--charcoal-gray);
     color: var(--blush-pink);
 }
 
-/* Contact Page */
-body.contact-page {
-    background-color: var(--soft-white);
-    background-size: cover;
-    background-position: center;
-    background-attachment: scroll;
-    background-repeat: no-repeat;
-}
-
-.contact-section {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    text-align: center;
-    padding-top: 80px;
-    padding: 40px 20px;
-    max-width: 600px;
-    margin: 0 auto;
+/* CTA Section */
+.cta-section {
     background-color: var(--muted-green);
-    border-radius: 10px;
-    flex-wrap: wrap;
-    /* Added flex-wrap for text */
-}
-
-
-
-.contact-info a {
-    color: var(--soft-white);
-    text-decoration: none;
-    font-weight: bold;
-    text-shadow: 1px 1px 2px rgba(129, 127, 127, 0.5);
-}
-
-.contact-info a:hover {
-    text-decoration: underline;
-    color: var(--charcoal-gray);
-}
-
-/* About Section */
-.about-section {
-    min-height: calc(100vh - 140px);
-    max-width: 900px;
-    margin: 0 auto;
     padding: 60px 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: var(--charcoal-gray);
-}
-
-.about-heading {
-    font-size: 2rem;
-    font-weight: bolder;
-    margin-bottom: 20px;
-    color: var(--muted-green);
     text-align: center;
-}
-
-.about-section p {
-    font-weight: normal;
-    text-align: center;
-    margin-bottom: 20px;
-    flex-wrap: wrap;
+    color: #fff;
 }
 
 /* Footer */
@@ -249,17 +146,8 @@ body.contact-page {
     background-color: var(--charcoal-gray);
     color: var(--soft-white);
     padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-align: center;
     font-size: 0.95rem;
-    flex-wrap: wrap;
-}
-
-.footer p {
-    margin: 0;
-    max-height: fit-content;
 }
 
 .footer a {
@@ -273,81 +161,30 @@ body.contact-page {
     text-decoration: underline;
 }
 
-/* Responsive Design */
+/* Responsive */
 @media (max-width: 768px) {
-    header {
-        padding: 16px;
-    }
-
-    .logo {
-        font-size: 1.3rem;
-        margin-bottom: 10px;
-    }
-
     .menu-icon {
         display: block;
-        font-size: 2rem;
-        cursor: pointer;
     }
 
     .nav-links {
         flex-direction: column;
-        width: 100%;
-        gap: 10px;
         display: none;
         background-color: var(--charcoal-gray);
         padding: 15px 0;
+        width: 100%;
     }
 
     .menu-toggle:checked+.menu-icon+nav .nav-links {
         display: flex;
     }
 
-    .hero-text-overlay {
-        padding: 15px;
-        font-size: 1rem;
-        max-width: 95%;
-    }
-
     .hero-text-overlay h1 {
         font-size: 1.2rem;
-        line-height: 1.5;
-
-        .hero-btn,
-        .cta-btn {
-            width: 100%;
-            padding: 12px;
-        }
-
-        font-size: 1rem;
+        line-height: 1.4;
     }
 
     .cta-section {
         padding: 40px 15px;
-    }
-
-    .cta-content {
-        padding: 20px;
-        font-size: 1rem;
-    }
-
-    .about-section {
-        padding: 40px 20px;
-        font-size: 1rem;
-    }
-
-    .about-heading {
-        font-size: 1.5rem;
-    }
-
-    .footer {
-        flex-direction: column;
-        gap: 10px;
-        padding: 20px;
-    }
-
-    .footer p {
-        text-align: center;
-        line-height: 1.5;
     }
 }
