@@ -238,18 +238,17 @@
        Re-add if performance is not a concern. */
     }
 
-    @keyframes fadein-contact-info {
-        from {
-            opacity: 0;
-            transform: translateY(20px);
+        @keyframes bounce {
+    
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+    
+            50% {
+                transform: translateY(-20px);
+            }
         }
-
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-}
 
 /* Hover effect for contact links */
 .contact-info a:hover {
