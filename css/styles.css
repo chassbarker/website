@@ -43,7 +43,7 @@ header {
 .menu-icon {
     display: none;
     font-size: 1.8rem;
-    color: var(--soft-white);
+    color: var(--charcoal-gray);
     cursor: pointer;
 }
 
