@@ -234,21 +234,24 @@ header {
     will-change: transform;
     animation: fadein-contact-info 1.8s ease-out forwards;
 
-    /* Text-shadow can increase rendering overhead, especially during animations, 
-       as the browser needs to calculate and redraw the shadow for each frame. */
+    /* Text-shadow was removed during animations to improve performance, 
+       especially on low-end devices. While it can enhance visual appeal, 
+       it increases rendering overhead as the browser recalculates and redraws 
+       the shadow for each frame. Consider re-adding it if performance is not a concern. */
     /* Removed text-shadow for better performance on low-end devices */
-    @keyframes fadein-contact-info {
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
+}
+
+@keyframes fadein-contact-info {
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
 /* Hover effect for contact links */
 .contact-info a:hover {
     text-decoration: underline;
-    color: var(--charcoal-gray);
+    color: var(--gold);
 }
 
 /* Footer */
