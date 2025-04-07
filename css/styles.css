@@ -220,7 +220,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: center-down;
     text-align: center;
     padding: 60px 20px;
     max-width: 600px;
@@ -238,6 +238,13 @@ header {
     opacity: 1;
     transform: translateY(0);
     will-change: transform;
+}
+
+.contact-info a:hover {
+    transform: scale(1.10);
+    color: var(--blush-pink);
+    text-decoration: underline;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .contact-info a:hover {
