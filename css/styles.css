@@ -130,7 +130,7 @@ header {
 
 .cta-btn {
     background-color: var(--gold);
-    color: hwb(0 100% 0%);
+    color: #000000;
     font-weight: bold;
     padding: 10px 20px;
     text-decoration: none;
