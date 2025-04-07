@@ -111,9 +111,23 @@ header {
 
 /* Button Styles */
 .hero-btn,
+ background-color: var(--gold);
+ color: hwb(0 100% 0%);
+ font-weight: bold;
+ padding: 10px 20px;
+ text-decoration: none;
+ border-radius: 5px;
+ font-size: 1rem;
+ max-width: var(--button-max-width);
+ transition: transform 0.3s ease,
+ background-color 0.3s ease;
+ display: inline-block;
+ text-align: center;
+}
+
 .cta-btn {
     background-color: var(--gold);
-    color: #fff;
+    color: hwb(0 100% 0%);
     font-weight: bold;
     padding: 10px 20px;
     text-decoration: none;
@@ -137,13 +151,7 @@ header {
     color: var(--blush-pink);
 }
 
-/* CTA Section */
-.cta-section {
-    background-color: var(--muted-green);
-    padding: 60px 20px;
-    text-align: center;
-    color: #fff;
-}
+
 
 /* About Section */
 .about-section {
