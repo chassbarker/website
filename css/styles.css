@@ -140,7 +140,8 @@ header {
     transition: transform 0.3s ease, background-color 0.3s ease;
     display: inline-block;
     margin-top: 20px;
-    /* The margin-top property adds a little space between the text and the button */
+    text-align: center;
+    align-self: center; /* Ensures the button is centered under the text */
 }
 
 /* Adds a little space between the text and the button */
