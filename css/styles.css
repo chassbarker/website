@@ -108,25 +108,21 @@ header {
     animation: fadeSlideUp 1.8s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
 }
 
-.no-animation .hero-text-overlay h1 {
+.disable-animation .hero-text-overlay h1 {
     opacity: 1;
     transform: translateY(0);
 }
 
-/* Animation to fade in and slide up elements for a smooth entrance effect */
-@keyframes no-animation {
+/* Defines an animation to fade in and slide up elements for a smooth entrance effect */
+@keyframes fade-slide-up {
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
-/* Button Styles */
+/* Black */
 .hero-btn {
-    background-color: var(--gold);
-    /* Changed from HWB to HEX for better compatibility */
-    color: #000000;
-    /* Black */
     font-weight: bold;
     padding: 10px 20px;
     text-decoration: none;
