@@ -222,8 +222,7 @@ header {
     background-color: var(--muted-green);
     border-radius: 10px;
     opacity: 100%;
-    transform: translateY(30px);
-    animation: fadeSlideUp 1.8s ease-out forwards;
+
 }
 
 .contact-info a {
