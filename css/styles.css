@@ -151,7 +151,13 @@ header {
     color: var(--blush-pink);
 }
 
-
+/* CTA Section */
+.cta-section {
+    background-color: var(--muted-green);
+    padding: 60px 20px;
+    text-align: center;
+    color: #fff;
+}
 
 /* About Section */
 .about-section {
