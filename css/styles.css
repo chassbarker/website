@@ -112,7 +112,7 @@ header {
 }
 
 /* Animation to fade in and slide up elements for a smooth entrance effect */
-@keyframes fadeSlideUp {
+@keyframes no-animation {
     to {
         opacity: 1;
         transform: translateY(0);
