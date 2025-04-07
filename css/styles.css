@@ -79,6 +79,7 @@ header {
 .nav-links a:hover {
     transform: scale(1.25);
     color: var(--blush-pink);
+    background-color: var(--charcoal-gray);
 }
 
 /* Hero Section */
@@ -133,6 +134,7 @@ header {
 .hero-btn:hover {
     transform: scale(1.25);
     color: var(--blush-pink);
+    background-color: var(--charcoal-gray);
 }
 
 
