@@ -152,8 +152,6 @@ header {
         background-color: var(--blush-pink);
     }
 
-    /* Removed duplicate .cta-btn definition */
-
     .cta-btn:hover {
         will-change: transform;
         transform: scale(1.25);
