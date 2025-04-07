@@ -232,22 +232,7 @@ header {
     opacity: 1;
     transform: translateY(0);
     will-change: transform;
-    animation: fadein-contact-info 1.8s ease-out forwards;
-        /* Text-shadow removed for performance on low-end devices. 
-       Re-add if performance is not a concern. */
-    }
-
-        @keyframes bounce {
-    
-            0%,
-            100% {
-                transform: translateY(0);
-            }
-    
-            50% {
-                transform: translateY(-20px);
-            }
-        }
+}
 
 .contact-info a:hover {
     /* Hover effect for contact links */
