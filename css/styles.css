@@ -146,6 +146,7 @@ header {
     
     /* Adds a little space between the text and the button */
     .hero-btn:hover {
+        will-change: transform;
         transform: scale(1.25);
         color: var(--charcoal-gray);
         background-color: var(--blush-pink);
@@ -154,6 +155,7 @@ header {
     /* Removed duplicate .cta-btn definition */
 
     .cta-btn:hover {
+        will-change: transform;
         transform: scale(1.25);
         color: var(--charcoal-gray);
         background-color: var(--blush-pink);
