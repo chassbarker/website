@@ -222,15 +222,26 @@ header {
     margin: 0 auto;
     background-color: var(--muted-green);
     border-radius: 10px;
+    opacity: 100%;
+    transform: translateY(30px);
+    animation: fadeSlideUp 1.8s ease-out forwards;
 }
 
 .contact-info a {
     color: var(--soft-white);
     text-decoration: none;
     font-weight: bold;
-    text-shadow: 1px 1px 2px rgba(129, 127, 127, 0.5);
+    /* Removed text-shadow for better performance on low-end devices */
 }
 
+@keyframes fadeSlideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hover effect for contact links */
 .contact-info a:hover {
     text-decoration: underline;
     color: var(--charcoal-gray);
