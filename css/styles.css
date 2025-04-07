@@ -128,7 +128,7 @@ header {
 
 .hero-btn:hover,
 .cta-btn:hover {
-    transform: scale(1.25);
+    transform: scale(1.1);
     background-color: var(--muted-green);
     color: var(--blush-pink);
 }
