@@ -233,24 +233,24 @@ header {
     transform: translateY(0);
     will-change: transform;
     animation: fadein-contact-info 1.8s ease-out forwards;
-
-    /* Text-shadow removed for performance on low-end devices. 
+        /* Text-shadow removed for performance on low-end devices. 
        Re-add if performance is not a concern. */
-}
+    }
 
-/* Removed unused @keyframes bounce animation */
+        @keyframes bounce {
+    
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+    
+            50% {
+                transform: translateY(-20px);
+            }
+        }
 
-/* Hover effect for contact links */
 .contact-info a:hover {
-    text-decoration: underline;
-    color: var(--gold);
-}
-
-/* Footer */
-.footer {
-    background-color: var(--charcoal-gray);
-    color: var(--soft-white);
-    padding: 20px;
+    /* Hover effect for contact links */
     text-align: center;
     font-size: 0.95rem;
 }
