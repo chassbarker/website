@@ -26,9 +26,19 @@
         </nav>
     </header>
     <!-- Removed inline script and moved logic to navigation.js to handle navigation highlighting based on the current page -->
-    <!-- The logic for extracting the current page name has been moved to navigation.js to improve maintainability and separation of concerns -->
+    <script>
+        // Highlight the current page in the navigation menu
+        const currentPage = window.location.pathname.split('/').pop();
+        const navLinks = document.querySelectorAll('.nav-links a');
+
+        navLinks.forEach(link => {
+            if (link.getAttribute('href') === currentPage) {
+                link.classList.add('active');
+            }
+        });
+    </script>
     <section class="hero">
-        <div class="hero-text-overlay">
+    const currentPage = window.location.pathname.replace(/\/$/, '').split('/').pop();
             <h1>Go Beyond Your Dreams With Web Design That Inspires, Connects, And Creates A Lasting Impact.</h1>
             <a href="about.html" class="btn hero-btn">About Me</a>
         </div>
