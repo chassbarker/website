@@ -141,14 +141,14 @@ header {
 
 .hero-btn:hover {
     transform: scale(1.25);
-    background-color: var(--charcoal-gray);
-    color: var(--blush-pink);
+    color: var(--charcoal-gray);
+    background-color: var(--blush-pink);
 }
 
 .cta-btn:hover {
     transform: scale(1.25);
-    background-color: var(--charcoal-gray);
-    color: var(--blush-pink);
+    color: var(--charcoal-gray);
+    background-color: var(--blush-pink);
 }
 
 /* CTA Section */
