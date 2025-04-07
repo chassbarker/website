@@ -231,7 +231,7 @@ header {
     font-weight: bold;
     opacity: 1;
     transform: translateY(30px);
-    animation: fadeSlideUp 1.8s ease-out forwards;
+    animation: fadein 1.8s ease-out forwards;
     /* Removed text-shadow for better performance on low-end devices */
 }
 
