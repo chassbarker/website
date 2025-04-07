@@ -103,6 +103,7 @@ header {
     opacity: 1;
     transform: none;
     animation: fadeSlideUp 1s ease-out forwards;
+    will-change: opacity, transform;
 }
 
 @keyframes fadeSlideUp {
