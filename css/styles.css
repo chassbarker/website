@@ -101,7 +101,7 @@ header {
     font-weight: 600;
     margin-bottom: 15px;
     opacity: 1;
-    transform: translateY(30px);
+    transform: none;
     animation: fadeSlideUp 1.8s ease-out forwards;
 }
 
