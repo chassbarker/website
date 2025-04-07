@@ -153,13 +153,12 @@ header {
 
 /* CTA Section */
 .cta-section {
-    /* Using muted green to create a calming effect for the call-to-action section */
+    /* Muted green provides a calming effect for the call-to-action section */
     background-color: var(--muted-green);
     padding: 60px 20px;
     text-align: center;
     color: var(--soft-white);
-    display: flex;
-    flex-direction: column;
+    display: block;
     align-items: center;
     justify-content: center;
 }
@@ -274,7 +273,7 @@ header {
     .about-heading {
         font-size: 1.5rem;
     }
-
+    
     .contact-section {
         padding: 40px 20px;
     }
