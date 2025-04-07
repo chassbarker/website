@@ -230,22 +230,25 @@ header {
     text-decoration: none;
     font-weight: bold;
     opacity: 1;
-    transform: translateY(30px);
+    transform: translateY(0);
     will-change: transform;
     animation: fadein-contact-info 1.8s ease-out forwards;
+    will-change: transform;
 
-    /* Text-shadow was removed during animations to improve performance, 
-       especially on low-end devices. While it can enhance visual appeal, 
-       it increases rendering overhead as the browser recalculates and redraws 
-       the shadow for each frame. Consider re-adding it if performance is not a concern. */
-    /* Removed text-shadow for better performance on low-end devices */
+    /* Text-shadow removed for performance on low-end devices. 
+       Re-add if performance is not a concern. */
 }
 
 @keyframes fadein-contact-info {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
     to {
         opacity: 1;
         transform: translateY(0);
     }
+}
 }
 
 /* Hover effect for contact links */
