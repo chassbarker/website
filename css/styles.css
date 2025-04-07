@@ -89,12 +89,9 @@ header {
 
 .hero-text-overlay {
     background-color: var(--overlay-bg);
-    position: relative;
-    z-index: 0;
     padding: 20px;
     border-radius: 5px;
     color: #fff;
-    /* Ensures the overlay takes up most of the container width while leaving some margin */
     width: 90%;
     max-width: 700px;
 }
@@ -118,18 +115,18 @@ header {
 /* Black */
 .hero-btn {
     background-color: var(--gold);
-        color: #000000;
-        font-weight: bold;
-        padding: 10px 20px;
-        text-decoration: none;
-        border-radius: 5px;
-        font-size: 1rem;
-        max-width: var(--button-max-width);
-        transition: transform 0.3s ease, background-color 0.3s ease;
-        display: inline-block;
-        margin-top: 20px;
-        text-align: center;
-        align-self: center;
+    color: #000000;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    max-width: var(--button-max-width);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    display: inline-block;
+    margin-top: 20px;
+    text-align: center;
+    align-self: center;
 }
 
 .cta-btn {
