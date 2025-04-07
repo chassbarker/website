@@ -141,154 +141,154 @@ header {
     display: inline-block;
     margin-top: 20px;
     /* The margin-top property adds a little space between the text and the button */
-    }
-    
-    /* Adds a little space between the text and the button */
-    .hero-btn:hover {
-        will-change: transform;
-        transform: scale(1.25);
-        color: var(--charcoal-gray);
-        background-color: var(--blush-pink);
+}
+
+/* Adds a little space between the text and the button */
+.hero-btn:hover {
+    will-change: transform;
+    transform: scale(1.25);
+    color: var(--charcoal-gray);
+    background-color: var(--blush-pink);
+}
+
+.cta-btn:hover {
+    will-change: transform;
+    transform: scale(1.25);
+    color: var(--charcoal-gray);
+    background-color: var(--blush-pink);
+}
+
+/* CTA Section */
+.cta-section {
+    /* Muted green provides a calming effect for the call-to-action section */
+    background-color: var(--muted-green);
+    padding: 60px 20px;
+    text-align: center;
+    color: var(--soft-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* About Section */
+.about-section {
+    min-height: calc(100vh - 140px);
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--charcoal-gray);
+}
+
+.about-heading {
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    color: var(--muted-green);
+    text-align: center;
+}
+
+.about-section p {
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Contact Section */
+.contact-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--muted-green);
+    border-radius: 10px;
+}
+
+.contact-info a {
+    color: var(--soft-white);
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(129, 127, 127, 0.5);
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+    color: var(--charcoal-gray);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--charcoal-gray);
+    color: var(--soft-white);
+    padding: 20px;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+.footer a {
+    color: var(--gold);
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer a:hover {
+    color: var(--blush-pink);
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
     }
 
-    .cta-btn:hover {
-        will-change: transform;
-        transform: scale(1.25);
-        color: var(--charcoal-gray);
-        background-color: var(--blush-pink);
+    .nav-links {
+        flex-direction: column;
+        display: none;
+        background-color: var(--charcoal-gray);
+        padding: 15px 0;
+        width: 100%;
     }
 
-    /* CTA Section */
+    .menu-toggle:checked+.menu-icon+nav .nav-links {
+        display: flex;
+    }
+
+    .hero-text-overlay h1 {
+        font-size: 1.2rem;
+        line-height: 1.4;
+    }
+
     .cta-section {
-        /* Muted green provides a calming effect for the call-to-action section */
-        background-color: var(--muted-green);
-        padding: 60px 20px;
-        text-align: center;
-        color: var(--soft-white);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
+        padding: 40px 15px;
     }
 
-    /* About Section */
     .about-section {
-        min-height: calc(100vh - 140px);
-        max-width: 900px;
-        margin: 0 auto;
-        padding: 60px 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        font-size: 1.1rem;
-        line-height: 1.8;
-        color: var(--charcoal-gray);
+        padding: 40px 20px;
+        font-size: 1rem;
     }
 
     .about-heading {
-        font-size: 2rem;
-        font-weight: bolder;
-        margin-bottom: 20px;
-        color: var(--muted-green);
-        text-align: center;
+        font-size: 1.5rem;
     }
 
-    .about-section p {
-        font-weight: normal;
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    /* Contact Section */
     .contact-section {
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        text-align: center;
-        padding: 60px 20px;
-        max-width: 600px;
-        margin: 0 auto;
-        background-color: var(--muted-green);
-        border-radius: 10px;
+        padding: 40px 20px;
     }
 
-    .contact-info a {
-        color: var(--soft-white);
-        text-decoration: none;
-        font-weight: bold;
-        text-shadow: 1px 1px 2px rgba(129, 127, 127, 0.5);
-    }
-
-    .contact-info a:hover {
-        text-decoration: underline;
-        color: var(--charcoal-gray);
-    }
-
-    /* Footer */
     .footer {
-        background-color: var(--charcoal-gray);
-        color: var(--soft-white);
+        flex-direction: column;
+        gap: 10px;
         padding: 20px;
-        text-align: center;
-        font-size: 0.95rem;
     }
-
-    .footer a {
-        color: var(--gold);
-        text-decoration: none;
-        margin: 0 5px;
-    }
-
-    .footer a:hover {
-        color: var(--blush-pink);
-        text-decoration: underline;
-    }
-
-    /* Responsive */
-    @media (max-width: 768px) {
-        .menu-icon {
-            display: block;
-        }
-
-        .nav-links {
-            flex-direction: column;
-            display: none;
-            background-color: var(--charcoal-gray);
-            padding: 15px 0;
-            width: 100%;
-        }
-
-        .menu-toggle:checked+.menu-icon+nav .nav-links {
-            display: flex;
-        }
-
-        .hero-text-overlay h1 {
-            font-size: 1.2rem;
-            line-height: 1.4;
-        }
-
-        .cta-section {
-            padding: 40px 15px;
-        }
-
-        .about-section {
-            padding: 40px 20px;
-            font-size: 1rem;
-        }
-
-        .about-heading {
-            font-size: 1.5rem;
-        }
-
-        .contact-section {
-            padding: 40px 20px;
-        }
-
-        .footer {
-            flex-direction: column;
-            gap: 10px;
-            padding: 20px;
-        }
-    }
+}
