@@ -231,15 +231,17 @@ header {
     font-weight: bold;
     opacity: 1;
     transform: translateY(30px);
-    animation: fadein 1.8s ease-out forwards;
+    will-change: transform;
+    animation: fadein-contact-info 1.8s ease-out forwards;
+       /* Text-shadow can increase rendering overhead, especially during animations, 
+       as the browser needs to calculate and redraw the shadow for each frame. */
     /* Removed text-shadow for better performance on low-end devices */
-}
-
-@keyframes fadein {
+@keyframes fadein-contact-info {
     to {
         opacity: 1;
         transform: translateY(0);
     }
+}
 }
 
 /* Hover effect for contact links */
