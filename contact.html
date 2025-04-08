@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Non-breaking space (&nbsp;) and non-breaking hyphen (&#8209;) used for proper phone number formatting -->
     <title>Contact | Chassidy Barker's Portfolio</title>
     <link rel="stylesheet" href="css/styles.css" />
 
@@ -45,13 +46,17 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <p>
-            &copy; 2025 ChassTastic Digital Code Studio. All Rights Reserved. |
-            <strong>Contact:</strong>
-            <!-- Non-breaking space (&nbsp;) and non-breaking hyphen (&#8209;) used for proper phone number formatting -->
-            <a href="tel:2108766419">(210)&nbsp;876&#8209;6419</a> |
-            <a href="mailto:chassidybarker&#64;gmail&#46;com">chassidybarker&#64;gmail&#46;com</a>
-        </p>
+        <div class="footer-contact">
+            <p>
+                &copy; 2025 ChassTastic Digital Code Studio. All Rights Reserved. |
+                <strong>Contact:</strong>
+                <a href="tel:2108766419">(210)&nbsp;876&#8209;6419</a> |
+                <a href="mailto:chassidybarker&#64;gmail&#46;com">chassidybarker&#64;gmail&#46;com</a>
+            </p>
+        </div>
+    </footer>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
     </footer>
     <script src="js/navigation.js"></script>
 </body>
