@@ -19,5 +19,5 @@ function highlightActiveLink() {
         return linkPath === currentPage;
     }
     }
-}
+
 
