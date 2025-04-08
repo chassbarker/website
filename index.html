@@ -57,10 +57,10 @@
     </footer>
 
     <script src="./js/navigation.js" defer></script>
-    <script>
-        // Dynamically set the current year in the footer
-        window.addEventListener('load', () => {
-            const yearElement = document.getElementById('current-year');
-            if (yearElement) {
-                yearElement.textContent = new Date().getFullYear();
-            }
+</body>
+
+</html>
+// Check if the element with id 'current-year' exists to avoid errors if it's missing
+if (yearElement) {
+yearElement.textContent = new Date().getFullYear();
+}
