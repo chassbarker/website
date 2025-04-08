@@ -254,6 +254,7 @@ header {
 }
 
 .footer a {
+    color: var(--charcoal-gray);
     color: var(--gold);
     text-decoration: none;
     margin: 0 5px;
