@@ -15,7 +15,9 @@ function highlightActiveLink() {
 
     // Helper function to check if a link is active
     function isLinkActive(link, currentPage) {
-        return link.getAttribute('href').split('?')[0].split('#')[0] === currentPage;
+        const linkPath = new URL(link.getAttribute('href'), window.location.origin).pathname.replace(/\/$/, '');
+        return linkPath === currentPage;
+    }
     }
 }
 
