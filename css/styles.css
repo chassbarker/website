@@ -266,6 +266,7 @@ header {
     color: var(--gold);
     text-decoration: none;
     margin: 0 5px;
+    text-align: center;
 }
 
 .footer a:hover {
