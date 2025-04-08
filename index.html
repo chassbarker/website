@@ -48,16 +48,18 @@
     <!-- Footer -->
     <footer class="footer">
         <p>
-            &copy; <span id="current-year"></span> <strong>ChassTastic Digital Code Studio</strong>. All Rights Reserved. |
+            &copy; <span id="current-year">2023</span> <strong>ChassTastic Digital Code Studio</strong>. All Rights Reserved.
+        </p>
+        <address>
             <span class="contact-label">Contact:</span>
             <a href="tel:2108766419">(210) 876‑6419</a> |
             <a href="mailto:chassidybarker@gmail.com">chassidybarker@gmail.com</a>
-        </p>
+        </address>
     </footer>
 
-    <script src="./js/navigation.js"></script>
-    <script>
-        // Dynamically set the current year in the footer
+    <script src="./js/navigation.js" defer></script>
+    <!-- Logic moved to navigation.js -->
+        // Set current year in footer
         document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>
 </body>
