@@ -6,7 +6,6 @@
 
 function highlightActiveLink() {
     const currentPage = window.location.pathname.replace(/\/$/, '').split('/').pop();
-    const navLinks = document.querySelectorAll('.nav-links a');
 
     navLinks.forEach(link => {
         if (isLinkActive(link, currentPage)) {
