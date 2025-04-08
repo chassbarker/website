@@ -272,6 +272,7 @@ header {
 .footer a:hover {
     color: var(--blush-pink);
     text-decoration: underline;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
 /* Responsive */
