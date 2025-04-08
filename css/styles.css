@@ -253,8 +253,16 @@ header {
     font-size: 0.95rem;
 }
 
+/* Styles for footer links to ensure consistent appearance and spacing */
+.footer {
+    background-color: var(--charcoal-gray);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .footer a {
-    color: var(--charcoal-gray);
     color: var(--gold);
     text-decoration: none;
     margin: 0 5px;
@@ -305,6 +313,7 @@ header {
         padding: 40px 20px;
     }
 
+    /* Adjusts the footer layout for smaller screens to stack elements vertically */
     .footer {
         flex-direction: column;
         gap: 10px;
