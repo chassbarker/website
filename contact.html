@@ -48,14 +48,15 @@
     <footer class="footer">
         <div class="footer-contact">
             <p>
-                &copy; 2025 ChassTastic Digital Code Studio. All Rights Reserved. |
+                &copy; <span id="current-year"></span> ChassTastic Digital Code Studio. All Rights Reserved. |
                 <strong>Contact:</strong>
                 <a href="tel:2108766419">(210)&nbsp;876&#8209;6419</a> |
                 <a href="mailto:chassidybarker&#64;gmail&#46;com">chassidybarker&#64;gmail&#46;com</a>
             </p>
         </div>
     </footer>
-    document.getElementById('current-year').textContent = new Date().getFullYear();
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>
     </footer>
     <script src="js/navigation.js"></script>
