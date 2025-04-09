@@ -9,7 +9,7 @@ function highlightActiveNavLinks(selector = '.nav-links') {
         console.warn(`Navigation container with selector "${selector}" not found. Exiting highlightActiveNavLinks.`);
         return;
     }
-    const navLinks = Array.from(extractLinksFromContainer(navContainer)); // Convert NodeList to a static array
+    const navLinks = getLinksArrayFromContainer(navContainer); // Retrieve and convert navigation links to a static array
 
 
 
@@ -20,32 +20,45 @@ function highlightActiveNavLinks(selector = '.nav-links') {
     const currentPage = window.location.pathname.replace(/\/$/, '').split('/').pop();
 
     // Remove the active class only from links that have it
-    navLinks.forEach(link => {
-        if (link.classList.contains(ACTIVE_CLASS)) {
-            link.classList.remove(ACTIVE_CLASS);
-        }
-    });
+    if (navLinks.some(link => link.classList.contains(ACTIVE_CLASS))) {
+        navLinks.forEach(link => {
+            if (link.classList.contains(ACTIVE_CLASS)) {
+                link.classList.remove(ACTIVE_CLASS);
+            }
+        });
+    }
 
     // Cache window.location.origin outside the loop to avoid redundant calls
-    const origin = window.location.origin; 
-    navLinks.forEach(link => {
-        let linkPath = '';
-        try {
-            const href = link ? link.getAttribute('href') : null;
-            if (href !== null) { // Ensure href is not null before using it
-                if (isValidHref(href)) {
-                    linkPath = href.startsWith('/') ? (origin + href).replace(/\/$/, '') : new URL(href, origin).pathname.replace(/\/$/, '');
-                } else {
-                    console.warn('Invalid href detected:', href, 'Element:', link.outerHTML);
+    const origin = obtainURLOrigin(); 
+        navLinks.forEach(link => {
+            try {
+                const href = extractHref(link);
+                if (href && isValidHref(href)) {
+                    const linkPath = constructLinkPath(href, origin);
+                    if (isCurrentPageLink(linkPath, currentPage)) {
+                        link.classList.add(ACTIVE_CLASS); // Use the constant for the class name
+                    }
                 }
+            } catch (error) {
+                console.error('Error processing navigation link:', link.getAttribute('href'), 'Element:', link.outerHTML, error);
             }
-            if (isCurrentPageLink(linkPath, currentPage)) {
-                link.classList.add(ACTIVE_CLASS); // Use the constant for the class name
-            }
-        } catch (error) {
-            console.error('Invalid URL in navigation link:', link.getAttribute('href'), 'Element:', link.outerHTML, error);
-        }
-    });
+        });
+    
+    function extractHref(link) {
+        return link ? link.getAttribute('href') : null;
+    }
+    
+    function constructLinkPath(href, origin) {
+        return href.startsWith('/') 
+            ? (origin + href).replace(/\/$/, '') 
+            : new URL(href, origin).toString().replace(/\/$/, '');
+    }
+}
+
+// Removed the obtainURLOrigin function as it is no longer needed
+
+function getLinksArrayFromContainer(navContainer) {
+    return Array.from(extractLinksFromContainer(navContainer));
 }
 
 /**
@@ -56,16 +69,17 @@ function highlightActiveNavLinks(selector = '.nav-links') {
  * @returns {NodeListOf<HTMLAnchorElement>} A list of anchor elements found within the container.
  */
 function extractLinksFromContainer(navContainer) {
-    if (!navContainer || !(navContainer instanceof HTMLElement)) {
+    if (!navContainer || !(navContainer instanceof Element)) {
         console.warn('Invalid navigation container provided to extractLinksFromContainer.');
-        return document.createDocumentFragment().querySelectorAll('a'); // Return an empty NodeList
+        return []; // Return an empty array for better performance and clarity
     }
+    // Retrieve all anchor elements within the navigation container
     return navContainer.querySelectorAll('a');
 }
 
 // Removed the getWindowOrigin function as it is no longer needed
 
-function isValidHref(href) {
-    return href && (href.startsWith('/') || href.startsWith('http'));
+function isHrefValidForNavigation(href) {
+    return href && /^\/|^https?:\/\//.test(href);
 }
 

@@ -48,6 +48,12 @@ header {
     cursor: pointer;
 }
 
+.menu-icon:hover {
+    color: var(--gold);
+    transform: scale(1.1);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
 .menu-toggle {
     display: none;
 }
@@ -69,23 +75,25 @@ header {
 .nav-links a:hover {
     transform: scale(1.10);
     color: var(--blush-pink);
+    background-color: var(--charcoal-gray);
     text-decoration: underline;
-    transition: transform 0.3s ease, color 0.3s ease;
+    transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease;
 }
 
 /* Style for the active navigation link */
 .nav-links .active {
     font-weight: bold;
     color: var(--blush-pink);
-    /* Example color for active link */
-    text-decoration: underline;
+    background-color: var(--charcoal-gray);
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 /* Hero Section */
 .hero {
     position: relative;
     height: 60vh;
-    background-image: var(--hero-image-url);
+    background-image: url('../images/comprose.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -112,6 +120,10 @@ header {
     opacity: 1;
     transform: none;
     animation: fadeSlideUp 1s ease-out forwards;
+
+    @media (prefers-reduced-motion: reduce) {
+        animation: none;
+    }
     will-change: opacity, transform;
 }
 
@@ -183,7 +195,6 @@ header {
     text-align: center;
     color: var(--charcoal-gray);
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-direction: column;
 }
@@ -192,7 +203,7 @@ header {
     margin-bottom: 20px;
     font-size: 1.2rem;
     font-weight: bold;
-    color: var(--charcoal-gray);
+    color: var(--soft-white); /* Improved contrast for better readability */
 }
 
 /* About Section */
@@ -208,6 +219,13 @@ header {
     line-height: 1.8;
     color: var(--charcoal-gray);
 }
+
+@media (max-width: 768px) {
+    .about-section {
+        padding: 4em 1.5em; /* Adjusted padding for smaller screens */
+    }
+}
+
 
 .about-heading {
     font-size: 2rem;
@@ -246,7 +264,6 @@ header {
     font-weight: bold;
     opacity: 1;
     transform: translateY(0);
-    will-change: transform;
 }
 
 .contact-info a:hover {
@@ -290,7 +307,6 @@ header {
 
 .footer a:hover {
     color: var(--blush-pink);
-    transition: color 0.3s ease;
     transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
@@ -300,16 +316,19 @@ header {
         display: block;
     }
 
+    /* Styles for navigation links in mobile view */
     .nav-links {
+        /* Hides the navigation links in mobile view until the menu toggle is activated */
         flex-direction: column;
         display: none;
         background-color: var(--charcoal-gray);
         padding: 15px 0;
         width: 100%;
     }
-
-    .menu-toggle:checked+.menu-icon+nav .nav-links {
+    .menu-toggle:checked ~ .menu-icon + nav .nav-links {
         display: flex;
+        flex-direction: column; /* Ensures proper layout for responsive view */
+    }
     }
 
     .hero-text-overlay h1 {
@@ -317,9 +336,7 @@ header {
         line-height: 1.4;
     }
 
-    .cta-section {
-        padding: 40px 15px;
-    }
+    /* Removed redundant padding adjustment for .cta-section */
 
     .about-section {
         padding: 40px 20px;
@@ -327,17 +344,13 @@ header {
     }
 
     .about-heading {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
-    .contact-section {
-        padding: 40px 20px;
-    }
+    /* Removed redundant padding adjustment for .contact-section */
 
     /* Adjusts the footer layout for smaller screens to stack elements vertically */
     .footer {
         flex-direction: column;
         gap: 10px;
-        padding: 20px;
     }
-}
