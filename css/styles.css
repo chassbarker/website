@@ -4,7 +4,8 @@
     --soft-white: #E0E0E0;
     /* Adjusted for better contrast */
     --muted-green: #A4B494;
-    --charcoal-gray: #4A4A4A; /* Ensure this is the intended color */
+    --charcoal-gray: #4A4A4A;
+    /* Ensure this is the intended color */
     --overlay-bg: rgba(0, 0, 0, 0.75);
     --hero-image-url: url('../images/comprose.jpg');
     --button-max-width: 300px;
@@ -263,7 +264,8 @@ header {
 
 /* Footer styles */
 .footer {
-    background-color: var(--charcoal-gray); /* Ensure this variable is correctly applied */
+    background-color: var(--charcoal-gray);
+    /* Ensure this variable is correctly applied */
     padding: 20px;
     display: flex;
     justify-content: center;
