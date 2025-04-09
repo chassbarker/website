@@ -57,5 +57,20 @@
 
 
 </body>
-<script src="./js/navigation.js"></script>
+<script src="./js/navigation.js" defer></script>
+<script>
+    // Wrap logic in DOMContentLoaded to ensure DOM is fully loaded
+    document.addEventListener("DOMContentLoaded", () => {
+        // Example: Highlighting the current page in the navigation menu
+        const currentPage = window.location.pathname.split("/").pop();
+        const navLinks = document.querySelectorAll(".nav-links a");
+
+        navLinks.forEach(link => {
+            if (link.getAttribute("href") === currentPage) {
+                link.classList.add("active");
+            }
+        });
+    });
+</script>
+
 </html>

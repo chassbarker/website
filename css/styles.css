@@ -72,6 +72,14 @@ header {
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
+/* Style for the active navigation link */
+.nav-links .active {
+    font-weight: bold;
+    color: var(--blush-pink);
+    /* Example color for active link */
+    text-decoration: underline;
+}
+
 /* Hero Section */
 .hero {
     position: relative;
