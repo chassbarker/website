@@ -202,7 +202,7 @@ header {
     background-color: var(--muted-green);
     padding: 60px 20px;
     text-align: center;
-    color:var(--soft-white);
+    color: var(--soft-white);
     display: flex;
     justify-content: center;
     flex-direction: column;
