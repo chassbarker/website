@@ -4,7 +4,7 @@
     --soft-white: #E0E0E0;
     /* Adjusted for better contrast */
     --muted-green: #A4B494;
-    --charcoal-gray: #4A4A4A;
+    --charcoal-gray: #2E2E2E; /* Adjusted for better contrast */
     /* Ensure this is the intended color */
     --overlay-bg: rgba(0, 0, 0, 0.75);
     --hero-image-url: url('../images/comprose.jpg');
@@ -16,7 +16,8 @@ body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
     background-color: var(--soft-white);
-    color: var(--charcoal-gray);
+    /* Chosen for contrast against the background while maintaining a soft aesthetic */
+    color: var(--soft-white);
 }
 
 img {
@@ -30,6 +31,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* Sets the background color to match the header and improve contrast in mobile view */
     background-color: var(--charcoal-gray);
     padding: 20px 40px;
     flex-wrap: wrap;
@@ -41,10 +43,11 @@ header {
     font-weight: bold;
 }
 
+/* The .menu-icon is hidden by default and shown in responsive views */
 .menu-icon {
     display: none;
     font-size: 1.8rem;
-    color: var(--charcoal-gray);
+    color: var(--soft-white);
     cursor: pointer;
 }
 
@@ -58,15 +61,18 @@ header {
     display: none;
 }
 
+/* Styles for the navigation links container. 
+   Ensures the links are displayed in a horizontal row with spacing. */
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 20px;
+    gap: 20px; /* Consistent spacing */
     padding: 0;
     margin: 0;
 }
 
 .nav-links a {
+    /* Ensures consistency with the body background color */
     color: var(--soft-white);
     text-decoration: none;
     font-weight: bold;
@@ -82,7 +88,6 @@ header {
 
 /* Style for the active navigation link */
 .nav-links .active {
-    font-weight: bold;
     color: var(--blush-pink);
     background-color: var(--charcoal-gray);
     padding: 5px 10px;
@@ -197,6 +202,7 @@ header {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    gap: 20px; /* Consistent spacing */
 }
 
 .cta-section p {
@@ -208,10 +214,10 @@ header {
 
 /* About Section */
 .about-section {
-    min-height: calc(100vh - 140px);
+    min-height: 85vh; /* Adjusted to a static percentage-based height */
     max-width: 900px;
     margin: 0 auto;
-    padding: 60px 20px;
+    padding: 5em 2em; /* Changed to relative units for better scaling */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -220,6 +226,7 @@ header {
     color: var(--charcoal-gray);
 }
 
+/* Responsive styles for screens with a maximum width of 768px */
 @media (max-width: 768px) {
     .about-section {
         padding: 4em 1.5em; /* Adjusted padding for smaller screens */
@@ -257,7 +264,6 @@ header {
     opacity: 100%;
 
 }
-
 .contact-info a {
     color: var(--soft-white);
     text-decoration: none;
@@ -265,6 +271,7 @@ header {
     opacity: 1;
     transform: translateY(0);
 }
+
 
 .contact-info a:hover {
     transform: scale(1.10);

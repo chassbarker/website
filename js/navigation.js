@@ -1,3 +1,6 @@
+    // Define the active class constant
+    const ACTIVE_CLASS = 'active';
+
     // Highlight the current page in the navigation menu
     // Cache navigation links to improve performance
     highlightActiveNavLinks();
@@ -33,7 +36,7 @@ function highlightActiveNavLinks(selector = '.nav-links') {
         navLinks.forEach(link => {
             try {
                 const href = extractHref(link);
-                if (href && isValidHref(href)) {
+                if (href && isHrefValidForNavigation(href)) {
                     const linkPath = constructLinkPath(href, origin);
                     if (isCurrentPageLink(linkPath, currentPage)) {
                         link.classList.add(ACTIVE_CLASS); // Use the constant for the class name
