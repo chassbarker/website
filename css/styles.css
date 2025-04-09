@@ -4,7 +4,8 @@
     --soft-white: #E0E0E0;
     /* Adjusted for better contrast */
     --muted-green: #A4B494;
-    --charcoal-gray: #2E2E2E; /* Adjusted for better contrast */
+    --charcoal-gray: #2E2E2E;
+    /* Adjusted for better contrast */
     /* Ensure this is the intended color */
     --overlay-bg: rgba(0, 0, 0, 0.75);
     --hero-image-url: url('../images/comprose.jpg');
@@ -66,7 +67,8 @@ header {
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 20px; /* Consistent spacing */
+    gap: 20px;
+    /* Consistent spacing */
     padding: 0;
     margin: 0;
 }
@@ -129,7 +131,9 @@ header {
     @media (prefers-reduced-motion: reduce) {
         animation: none;
     }
-    will-change: opacity, transform;
+
+    will-change: opacity,
+    transform;
 }
 
 @keyframes fadeSlideUp {
@@ -202,22 +206,26 @@ header {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 20px; /* Consistent spacing */
+    gap: 20px;
+    /* Consistent spacing */
 }
 
 .cta-section p {
     margin-bottom: 20px;
     font-size: 1.2rem;
     font-weight: bold;
-    color: var(--soft-white); /* Improved contrast for better readability */
+    color: var(--soft-white);
+    /* Improved contrast for better readability */
 }
 
 /* About Section */
 .about-section {
-    min-height: 85vh; /* Adjusted to a static percentage-based height */
+    min-height: 85vh;
+    /* Adjusted to a static percentage-based height */
     max-width: 900px;
     margin: 0 auto;
-    padding: 5em 2em; /* Changed to relative units for better scaling */
+    padding: 5em 2em;
+    /* Changed to relative units for better scaling */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -229,7 +237,8 @@ header {
 /* Responsive styles for screens with a maximum width of 768px */
 @media (max-width: 768px) {
     .about-section {
-        padding: 4em 1.5em; /* Adjusted padding for smaller screens */
+        padding: 4em 1.5em;
+        /* Adjusted padding for smaller screens */
     }
 }
 
@@ -264,6 +273,7 @@ header {
     opacity: 100%;
 
 }
+
 .contact-info a {
     color: var(--soft-white);
     text-decoration: none;
@@ -332,32 +342,34 @@ header {
         padding: 15px 0;
         width: 100%;
     }
-    .menu-toggle:checked ~ .menu-icon + nav .nav-links {
+
+    .menu-toggle:checked~.menu-icon+nav .nav-links {
         display: flex;
-        flex-direction: column; /* Ensures proper layout for responsive view */
-    }
-    }
-
-    .hero-text-overlay h1 {
-        font-size: 1.2rem;
-        line-height: 1.4;
-    }
-
-    /* Removed redundant padding adjustment for .cta-section */
-
-    .about-section {
-        padding: 40px 20px;
-        font-size: 1rem;
-    }
-
-    .about-heading {
-        font-size: 2rem;
-    }
-
-    /* Removed redundant padding adjustment for .contact-section */
-
-    /* Adjusts the footer layout for smaller screens to stack elements vertically */
-    .footer {
         flex-direction: column;
-        gap: 10px;
+        /* Ensures proper layout for responsive view */
     }
+}
+
+.hero-text-overlay h1 {
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+
+/* Removed redundant padding adjustment for .cta-section */
+
+.about-section {
+    padding: 40px 20px;
+    font-size: 1rem;
+}
+
+.about-heading {
+    font-size: 2rem;
+}
+
+/* Removed redundant padding adjustment for .contact-section */
+
+/* Adjusts the footer layout for smaller screens to stack elements vertically */
+.footer {
+    flex-direction: column;
+    gap: 10px;
+}
