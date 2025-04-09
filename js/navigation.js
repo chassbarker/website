@@ -9,7 +9,7 @@ function highlightActiveNavLinks(selector = '.nav-links') {
         console.warn(`Navigation container with selector "${selector}" not found. Exiting highlightActiveNavLinks.`);
         return;
     }
-    const navLinks = extractLinksFromContainer(navContainer); // Query links within the container
+    const navLinks = Array.from(extractLinksFromContainer(navContainer)); // Convert NodeList to a static array
 
 
 
