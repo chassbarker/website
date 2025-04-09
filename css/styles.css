@@ -271,7 +271,14 @@ header {
     justify-content: center;
     align-items: center;
 }
-
+/* The .footer-contact class is used for styling specific contact information within the footer, 
+   such as text or labels, and is distinct from the overall footer container (.footer). */
+.footer-contact {
+    color: var(--soft-white);
+    font-size: 0.9rem;
+    margin-right: 20px;
+    text-align: center;
+}
 .footer a {
     color: var(--gold);
     text-decoration: none;
