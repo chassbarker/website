@@ -111,7 +111,6 @@ function extractLinksFromContainer(navContainer) {
 }
 
 // Removed the getWindowOrigin function as it is no longer needed
-
 function isHrefValidForNavigation(href) {
     return href &&
            /^\/|^https?:\/\//.test(href) &&
