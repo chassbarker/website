@@ -33,6 +33,16 @@ function highlightActiveNavLinks(selector = '.nav-links') {
 
     // Cache window.location.origin outside the loop to avoid redundant calls
     const origin = obtainURLOrigin();
+
+    /**
+     * Retrieves the origin of the current window location.
+     * This function is used to construct absolute URLs for comparison.
+     *
+     * @returns {string} The origin of the current window location.
+     */
+    function obtainURLOrigin() {
+        return window.location.origin;
+    }
         navLinks.forEach(link => {
             try {
                 const href = extractHref(link);
