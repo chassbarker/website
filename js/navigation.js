@@ -32,7 +32,7 @@ function highlightActiveNavLinks(selector = '.nav-links') {
     }
 
     // Cache window.location.origin outside the loop to avoid redundant calls
-    const origin = obtainURLOrigin(); 
+    const origin = obtainURLOrigin();
         navLinks.forEach(link => {
             try {
                 const href = extractHref(link);
@@ -46,14 +46,14 @@ function highlightActiveNavLinks(selector = '.nav-links') {
                 console.error('Error processing navigation link:', link.getAttribute('href'), 'Element:', link.outerHTML, error);
             }
         });
-    
+
     function extractHref(link) {
         return link ? link.getAttribute('href') : null;
     }
-    
+
     function constructLinkPath(href, origin) {
-        return href.startsWith('/') 
-            ? (origin + href).replace(/\/$/, '') 
+        return href.startsWith('/')
+            ? (origin + href).replace(/\/$/, '')
             : new URL(href, origin).toString().replace(/\/$/, '');
     }
 }
@@ -67,7 +67,7 @@ function getLinksArrayFromContainer(navContainer) {
 /**
  * Extracts all anchor (`<a>`) elements from the given navigation container.
  * This function is used to retrieve the links that will be processed for highlighting.
- * 
+ *
  * @param {HTMLElement} navContainer - The container element holding the navigation links.
  * @returns {NodeListOf<HTMLAnchorElement>} A list of anchor elements found within the container.
  */
